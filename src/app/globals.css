@@ -87,8 +87,20 @@
 
   /* Button utilities */
   .common__btn {
-    @apply inline-flex items-center gap-2 px-6 py-3 border border-btn text-primary transition-all duration-500;
-    @apply hover:bg-btn hover:text-secondary;
+    @apply inline-flex items-center gap-2 px-6 py-3 border-2 border-btn text-primary transition-all duration-500 font-semibold;
+    @apply hover:bg-btn hover:text-secondary hover:border-btn;
+  }
+
+  .common__btn span {
+    @apply transition-colors duration-500;
+  }
+
+  .common__btn i {
+    @apply transition-colors duration-500;
+  }
+
+  .common__btn img {
+    @apply transition-all duration-500;
   }
 
   /* Circle button - see complete definition below */
@@ -352,7 +364,8 @@
 }
 
 .prj__title {
-  @apply text-primary mb-3 block transition-colors duration-300;
+  @apply text-primary mb-3 block transition-colors duration-300 text-[24px] font-semibold;
+  @apply lg:text-[22px];
   @apply hover:text-secondary;
 }
 
@@ -361,7 +374,7 @@
 }
 
 .project__group {
-  @apply text-pra;
+  @apply text-pra text-sm mb-0;
 }
 
 .projects__wapper_card:hover .project__group {
@@ -399,6 +412,19 @@
   @apply font-semibold;
 }
 
+/* Subscribe section */
+.subscribe {
+  @apply relative z-10;
+}
+
+.subscribe input {
+  @apply focus:outline-none focus:border-btn transition-colors duration-300;
+}
+
+.subscribe input::placeholder {
+  @apply opacity-60;
+}
+
 /* Footer section styles */
 .footer__logo {
   @apply gap-3;
@@ -417,8 +443,8 @@
 }
 
 .footer__socal a {
-  @apply w-[50px] h-[50px] rounded-full bg-[#293634] flex items-center justify-center text-btn transition-all duration-300;
-  @apply hover:bg-btn hover:text-secondary;
+  @apply text-primary transition-all duration-300;
+  @apply hover:text-btn;
 }
 
 .footer__border {
@@ -850,7 +876,12 @@
 }
 
 .service__card:hover h3,
-.service__card:hover p {
+.service__card:hover p,
+.service__card:hover span {
+  @apply text-secondary;
+}
+
+.service__card:hover i {
   @apply text-secondary;
 }
 
@@ -864,7 +895,16 @@
 }
 
 .service__card p {
-  @apply text-pra;
+  @apply text-pra mb-5;
+}
+
+.service__card a {
+  @apply text-btn flex items-center gap-2 transition-colors duration-300;
+  @apply hover:text-secondary;
+}
+
+.service__card i {
+  @apply text-btn transition-colors duration-300;
 }
 
 /* Project card styles */
@@ -1000,16 +1040,29 @@
   @apply hover:shadow-xl;
 }
 
+.blogs__wapper_card > div {
+  @apply px-[30px] py-[30px];
+  @apply md:px-[20px] md:py-[25px];
+}
+
 .card__thumb {
   @apply w-full h-[250px] object-cover;
 }
 
 .card__title {
-  @apply text-primary mb-3 hover:text-btn transition-colors duration-300;
+  @apply text-primary mb-4 block hover:text-btn transition-colors duration-300;
 }
 
 .card__author {
-  @apply flex items-center gap-4 text-pra text-sm;
+  @apply flex items-center gap-6 text-pra text-sm mt-5;
+}
+
+.card__author p {
+  @apply flex items-center gap-2 mb-0;
+}
+
+.card__author img {
+  @apply w-[18px] h-[18px];
 }
 
 /* Counter/About counter styles */
@@ -1100,12 +1153,41 @@
 }
 
 .services__2_card {
-  @apply bg-primary border border-[#e3ece7];
+  @apply bg-primary border border-[#e3ece7] px-[30px] py-[40px] rounded-[10px] transition-all duration-500;
+  @apply md:px-[20px] md:py-[30px];
   @apply hover:bg-secondary hover:border-secondary;
 }
 
+.services__2_card img {
+  @apply w-[60px] h-[60px] mb-5;
+}
+
+.services__2_card h3 {
+  @apply text-secondary text-[24px] font-semibold mb-3;
+  @apply lg:text-[22px];
+}
+
+.services__2_card p {
+  @apply text-gry mb-5;
+}
+
+.services__2_card a {
+  @apply text-main flex items-center gap-2 transition-colors duration-300;
+  @apply hover:text-primary;
+}
+
+.services__2_card i {
+  @apply text-main transition-colors duration-300;
+}
+
 .services__2_card:hover h3,
-.services__2_card:hover p {
+.services__2_card:hover p,
+.services__2_card:hover span {
+  @apply text-primary;
+}
+
+.services__2_card:hover a,
+.services__2_card:hover i {
   @apply text-primary;
 }
 
@@ -1130,6 +1212,19 @@
 
 .projects__2_card img {
   @apply w-full h-[280px] object-cover;
+}
+
+.projects__2_card > div {
+  @apply px-[30px] py-[30px];
+  @apply md:px-[20px] md:py-[25px];
+}
+
+.projects__2_card a {
+  @apply text-secondary mb-3 block hover:text-main transition-colors duration-300;
+}
+
+.projects__2_card p {
+  @apply text-gry text-sm mb-0;
 }
 
 /* All projects page */
