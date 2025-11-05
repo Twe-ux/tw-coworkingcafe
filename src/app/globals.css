@@ -261,6 +261,306 @@
   }
 }
 
+/* Testimonial section styles */
+.testimonial {
+  @apply bg-body;
+}
+
+.testimonial .slide {
+  @apply bg-[#293634] rounded-[10px] px-[40px] py-[50px];
+  @apply xl:px-[30px] xl:py-[40px];
+  @apply md:px-[25px] md:py-[35px];
+}
+
+.testimonial .star {
+  @apply mb-4;
+}
+
+.testimonial .star i {
+  @apply text-btn text-lg;
+}
+
+.testimonial .review {
+  @apply text-primary text-lg mb-6 leading-[30px];
+}
+
+.testimonial .reviewer__info img {
+  @apply w-[60px] h-[60px] rounded-full object-cover;
+}
+
+.testimonial .reviewer__info p {
+  @apply text-primary font-semibold text-base mb-1;
+}
+
+.testimonial .reviewer__info small {
+  @apply text-pra text-sm;
+}
+
+/* Swiper navigation styles */
+.slide__nav {
+  @apply w-[50px] h-[50px] rounded-full flex items-center justify-center cursor-pointer transition-all duration-300;
+  @apply bg-[#293634] border border-[#293634];
+  @apply hover:bg-btn hover:border-btn;
+}
+
+.slide__nav i {
+  @apply text-btn text-lg;
+  @apply transition-colors duration-300;
+}
+
+.slide__nav:hover i {
+  @apply text-secondary;
+}
+
+/* Swiper pagination styles */
+.slide-dots {
+  @apply w-[50px] h-[50px] rounded-full flex items-center justify-center cursor-pointer transition-all duration-300;
+  @apply bg-[#293634] text-btn border border-[#293634] font-semibold text-base;
+  @apply hover:bg-btn hover:text-secondary hover:border-btn;
+}
+
+.slide-dots-active {
+  @apply bg-btn text-secondary border-btn;
+}
+
+/* Pricing section styles */
+.pricing {
+  @apply bg-body py__130;
+}
+
+.pricing__card {
+  @apply bg-[#293634] rounded-[10px] px-[40px] py-[50px] transition-all duration-500;
+  @apply xl:px-[30px] xl:py-[40px];
+  @apply md:px-[25px] md:py-[35px];
+  @apply hover:bg-btn;
+}
+
+.pricing__card:hover h2,
+.pricing__card:hover p,
+.pricing__card:hover li {
+  @apply text-secondary;
+}
+
+.pricing__card h2 {
+  @apply text-btn text-[48px] font-bold mb-4;
+  @apply xl:text-[40px];
+  @apply lg:text-[36px];
+}
+
+.pricing__card h3 {
+  @apply text-primary text-[28px] font-semibold mb-3;
+  @apply lg:text-[24px];
+}
+
+.pricing__card ul {
+  @apply space-y-3 mb-8;
+}
+
+.pricing__card li {
+  @apply text-primary flex items-center gap-3;
+}
+
+.pricing__card li i {
+  @apply text-btn text-lg;
+}
+
+/* Banner/Hero sections */
+.banner {
+  @apply relative overflow-hidden;
+}
+
+.banner h1 {
+  @apply mb-6;
+}
+
+.banner p {
+  @apply mb-8 text-lg;
+}
+
+.banner2 {
+  @apply relative overflow-hidden bg-body;
+}
+
+/* Blog card styles */
+.blog__card {
+  @apply bg-[#293634] rounded-[10px] overflow-hidden transition-all duration-500;
+  @apply hover:shadow-xl;
+}
+
+.blog__card img {
+  @apply w-full h-[250px] object-cover;
+}
+
+.blog__card_content {
+  @apply px-[30px] py-[35px];
+  @apply md:px-[20px] md:py-[25px];
+}
+
+.blog__card_content h3 {
+  @apply text-primary text-[24px] font-semibold mb-3 hover:text-btn transition-colors duration-300;
+  @apply lg:text-[22px];
+}
+
+.blog__card_content p {
+  @apply text-pra mb-4;
+}
+
+.blog__card_meta {
+  @apply flex items-center gap-4 text-pra text-sm;
+}
+
+/* Service card styles */
+.service__card {
+  @apply bg-[#293634] rounded-[10px] px-[30px] py-[40px] transition-all duration-500;
+  @apply md:px-[20px] md:py-[30px];
+  @apply hover:bg-btn;
+}
+
+.service__card:hover h3,
+.service__card:hover p {
+  @apply text-secondary;
+}
+
+.service__card img {
+  @apply w-[60px] h-[60px] mb-5;
+}
+
+.service__card h3 {
+  @apply text-primary text-[24px] font-semibold mb-3;
+  @apply lg:text-[22px];
+}
+
+.service__card p {
+  @apply text-pra;
+}
+
+/* Project card styles */
+.project__card {
+  @apply relative rounded-[10px] overflow-hidden cursor-pointer;
+}
+
+.project__card img {
+  @apply w-full h-[350px] object-cover transition-transform duration-500;
+}
+
+.project__card:hover img {
+  @apply scale-110;
+}
+
+.project__card_overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-[#0f1b19] to-transparent opacity-0 transition-opacity duration-500;
+}
+
+.project__card:hover .project__card_overlay {
+  @apply opacity-100;
+}
+
+.project__card_content {
+  @apply absolute bottom-0 left-0 right-0 px-[30px] py-[25px] translate-y-full transition-transform duration-500;
+}
+
+.project__card:hover .project__card_content {
+  @apply translate-y-0;
+}
+
+.project__card_content h3 {
+  @apply text-primary text-[24px] font-semibold mb-2;
+}
+
+.project__card_content p {
+  @apply text-btn;
+}
+
+/* About section styles */
+.about__counter {
+  @apply flex items-center gap-4 mb-6;
+}
+
+.about__counter h2 {
+  @apply text-btn text-[54px] font-bold mb-0;
+  @apply xl:text-[45px];
+  @apply lg:text-[40px];
+}
+
+.about__counter p {
+  @apply text-primary text-lg;
+}
+
+/* FAQ styles */
+.faq__item {
+  @apply bg-[#293634] rounded-[10px] px-[30px] py-[25px] mb-4 cursor-pointer transition-all duration-300;
+  @apply hover:bg-btn;
+}
+
+.faq__item h3 {
+  @apply text-primary text-[20px] font-semibold mb-3 flex items-center justify-between;
+}
+
+.faq__item p {
+  @apply text-pra;
+}
+
+/* Contact form styles */
+.contact__form input,
+.contact__form textarea {
+  @apply w-full bg-[#293634] border border-[#293634] rounded-[5px] px-4 py-3 text-primary;
+  @apply focus:border-btn focus:outline-none transition-colors duration-300;
+}
+
+.contact__form textarea {
+  @apply min-h-[150px] resize-none;
+}
+
+/* Footer styles */
+.footer {
+  @apply bg-[#0f1b19] pt-[90px] pb-[30px];
+  @apply md:pt-[70px];
+}
+
+.footer h3 {
+  @apply text-primary text-[22px] font-semibold mb-5;
+}
+
+.footer ul li {
+  @apply mb-3;
+}
+
+.footer ul li a {
+  @apply text-pra hover:text-btn transition-colors duration-300;
+}
+
+.footer__social {
+  @apply flex items-center gap-3;
+}
+
+.footer__social a {
+  @apply w-[40px] h-[40px] rounded-full bg-[#293634] flex items-center justify-center text-btn transition-all duration-300;
+  @apply hover:bg-btn hover:text-secondary;
+}
+
+/* Page header/title styles */
+.page__header {
+  @apply bg-body py-[120px];
+  @apply md:py-[80px];
+}
+
+.page__header h1 {
+  @apply text-center mb-4;
+}
+
+.page__header p {
+  @apply text-center text-pra;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+  @apply flex items-center justify-center gap-2 text-pra;
+}
+
+.breadcrumb a {
+  @apply hover:text-btn transition-colors duration-300;
+}
+
 /* Custom container sizes for specific sections */
 @media (min-width: 1200px) {
   .banner2 .container,

@@ -4,6 +4,8 @@ import { testimonialsTwoData } from "@/db/testimonialsTwoData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import SlideUp from "@/utils/animations/slideUp";
 import SlideDown from "@/utils/animations/slideDown";
 
