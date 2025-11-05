@@ -261,6 +261,477 @@
   }
 }
 
+/* Blog section styles */
+.blogs {
+  @apply bg-body;
+}
+
+.blogs__title {
+  @apply mb-12;
+}
+
+.blogs__wapper {
+  @apply pt-10;
+}
+
+/* Services section styles */
+.services {
+  @apply bg-body;
+}
+
+.services__title {
+  @apply mb-12;
+}
+
+.services__wapper {
+  @apply pt-10;
+}
+
+.services__wapper_list {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+
+.services__wapper_list > div {
+  @apply border-b border-[#293634] pb-8 transition-all duration-300;
+  @apply hover:border-btn;
+}
+
+.service__name {
+  @apply text-primary text-[32px] font-semibold mb-4 flex items-baseline gap-3 transition-colors duration-300;
+  @apply lg:text-[28px];
+  @apply hover:text-btn;
+}
+
+.service__name sup {
+  @apply text-btn text-[18px] font-normal;
+}
+
+.services__wapper_list .describe {
+  @apply text-pra mb-4;
+}
+
+.services__wapper_list .icon {
+  @apply inline-block;
+}
+
+.services__wapper_list .icon img.yellow {
+  @apply inline-block;
+}
+
+.services__wapper_list .icon img.black {
+  @apply hidden;
+}
+
+.services__wapper_list a:hover .icon img.yellow {
+  @apply hidden;
+}
+
+.services__wapper_list a:hover .icon img.black {
+  @apply inline-block;
+}
+
+/* About section styles */
+.about {
+  @apply bg-body;
+}
+
+.about__title {
+  @apply mb-12;
+}
+
+.about__title_shap {
+  @apply flex items-center justify-center;
+}
+
+.about__wapper {
+  @apply pt-10;
+}
+
+.about__wapper_left p {
+  @apply text-pra mb-8 text-lg leading-[30px];
+}
+
+.about__wapper_center img {
+  @apply w-full rounded-[10px];
+}
+
+.about__wapper_right {
+  @apply space-y-6;
+}
+
+.about__wapper_right li {
+  @apply flex items-start gap-3 text-primary text-lg;
+}
+
+.about__wapper_right li i {
+  @apply text-btn text-xl mt-1;
+}
+
+/* Projects section styles */
+.projects {
+  @apply bg-body;
+}
+
+.projects__title {
+  @apply mb-12;
+}
+
+.projects__wapper {
+  @apply pt-10;
+}
+
+.projects__wapper_card {
+  @apply bg-[#293634] rounded-[10px] p-[30px] transition-all duration-500;
+  @apply hover:bg-btn;
+}
+
+.projects__wapper_card img {
+  @apply w-full h-[280px] object-cover rounded-[10px] mb-5;
+}
+
+.prj__title {
+  @apply text-primary mb-3 block transition-colors duration-300;
+  @apply hover:text-secondary;
+}
+
+.projects__wapper_card:hover .prj__title {
+  @apply text-secondary;
+}
+
+.project__group {
+  @apply text-pra;
+}
+
+.projects__wapper_card:hover .project__group {
+  @apply text-secondary;
+}
+
+.projects__usecase {
+  @apply bg-[#293634] rounded-[10px] p-[50px] mt-12;
+  @apply xl:p-[40px];
+  @apply md:p-[30px];
+}
+
+.projects__usecase_content h3 {
+  @apply text-primary mb-4;
+}
+
+.projects__usecase_content p {
+  @apply text-pra mb-8 leading-[30px];
+}
+
+.projects__usecase_img {
+  @apply w-full rounded-[10px];
+}
+
+/* Header styles */
+.header__top {
+  @apply sticky top-0 z-[999];
+}
+
+.header__bottom {
+  @apply sticky top-0;
+}
+
+.header__bottom_logo h5 {
+  @apply font-semibold;
+}
+
+/* Footer section styles */
+.footer__logo {
+  @apply gap-3;
+}
+
+.footer__logo h5 {
+  @apply text-grayWhite text-[34px] font-semibold mb-0;
+}
+
+.footer__socal {
+  @apply list-none;
+}
+
+.footer__socal li {
+  @apply mb-0;
+}
+
+.footer__socal a {
+  @apply w-[50px] h-[50px] rounded-full bg-[#293634] flex items-center justify-center text-btn transition-all duration-300;
+  @apply hover:bg-btn hover:text-secondary;
+}
+
+.footer__border {
+  @apply opacity-20;
+}
+
+.footer__info {
+  @apply justify-between;
+}
+
+.footer__info_group {
+  @apply mb-6;
+}
+
+.footer__info_address p,
+.footer__info_contact li {
+  @apply text-pra mb-4 leading-[28px];
+}
+
+.footer__info_contact {
+  @apply space-y-3;
+}
+
+.footer__lo_co {
+  @apply items-center justify-between;
+}
+
+.footer__copyright {
+  @apply justify-center;
+}
+
+.footer__copyright p {
+  @apply text-pra text-center;
+}
+
+/* Banner/Hero section styles */
+.banner__content_title h1 {
+  @apply mb-6;
+}
+
+.banner__content_title p {
+  @apply text-pra mb-8 text-lg leading-[30px];
+}
+
+.banner__content_number {
+  @apply gap-6;
+}
+
+.banner__content_number h2 {
+  @apply text-secondary text-[54px] font-bold mb-2;
+  @apply xl:text-[45px];
+  @apply lg:text-[36px];
+  @apply md:text-[28px];
+}
+
+.banner__content_number p {
+  @apply text-gry text-base mb-0;
+}
+
+.banner__right {
+  @apply relative;
+}
+
+.bg__shap,
+.bg__video,
+.bg__img {
+  @apply w-full h-auto;
+}
+
+.banner__shap {
+  @apply absolute w-[100px] h-[100px] bg-btn rounded-full;
+  animation: float 3s ease-in-out infinite;
+}
+
+.banner__shap_1 {
+  @apply top-[10%] left-[5%];
+}
+
+.banner__shap_2 {
+  @apply top-[60%] left-[15%];
+  animation-delay: 1s;
+}
+
+.banner__shap_3 {
+  @apply top-[30%] right-[10%];
+  animation-delay: 2s;
+}
+
+.banner__shap_4 {
+  @apply bottom-[10%] right-[20%];
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.buttons_file {
+  @apply bg-main border-main text-primary;
+  @apply hover:bg-btn hover:border-btn hover:text-secondary;
+}
+
+.buttons_outline {
+  @apply bg-transparent border-btn text-btn;
+  @apply hover:bg-btn hover:text-secondary;
+}
+
+/* Pricing additional styles */
+.pricing__card_title {
+  @apply mb-6;
+}
+
+.border__full {
+  @apply block w-full h-[1px] bg-[#ffffff20] my-6;
+}
+
+/* Search box styles */
+.search__box {
+  @apply bg-[#293634] rounded-[10px] p-6;
+}
+
+.search__box input {
+  @apply w-full bg-transparent border border-[#ffffff20] rounded-[5px] px-4 py-3 text-primary mt-4;
+  @apply focus:border-btn focus:outline-none;
+}
+
+/* Categories styles */
+.categories ul {
+  @apply space-y-3 mt-4;
+}
+
+.categories li {
+  @apply flex items-center justify-between text-pra transition-colors duration-300;
+  @apply hover:text-btn;
+}
+
+.categories a {
+  @apply flex items-center justify-between w-full py-2;
+}
+
+/* Latest post styles */
+.latest__post ul {
+  @apply space-y-4 mt-4;
+}
+
+.latest__post li {
+  @apply flex gap-4;
+}
+
+.thumb__img {
+  @apply w-[80px] h-[80px] rounded-[5px] object-cover;
+}
+
+.latest__post h6 {
+  @apply text-primary text-base font-semibold mb-2 transition-colors duration-300;
+  @apply hover:text-btn;
+}
+
+.latest__post small {
+  @apply text-pra text-sm;
+}
+
+/* Tags styles */
+.tags ul {
+  @apply flex flex-wrap gap-3 mt-4;
+}
+
+.tags li {
+  @apply mb-0;
+}
+
+.tags a {
+  @apply inline-block bg-[#293634] px-4 py-2 rounded-[5px] text-pra transition-all duration-300;
+  @apply hover:bg-btn hover:text-secondary;
+}
+
+/* Comments styles */
+.main__comment,
+.reply__comment {
+  @apply flex gap-4 mb-8;
+}
+
+.reply__comment {
+  @apply ml-[80px];
+  @apply md:ml-[40px];
+}
+
+.main__comment img,
+.reply__comment img {
+  @apply w-[60px] h-[60px] rounded-full object-cover;
+}
+
+/* Blog article styles */
+.first__para,
+.second__para {
+  @apply mb-8;
+}
+
+.first__para p,
+.second__para p {
+  @apply text-pra mb-4 leading-[30px];
+}
+
+.img__gallery img {
+  @apply rounded-[10px] w-full;
+}
+
+.share__option {
+  @apply border-t border-b border-[#293634] py-6 my-8;
+}
+
+/* Leave reply styles */
+.leave__replay {
+  @apply mt-12;
+}
+
+.leave__replay input,
+.leave__replay textarea {
+  @apply w-full bg-[#293634] border border-[#293634] rounded-[5px] px-4 py-3 text-primary;
+  @apply focus:border-btn focus:outline-none;
+}
+
+/* Tools section */
+.tools {
+  @apply bg-body;
+}
+
+/* FAQ wrapper */
+.faq__wapper {
+  @apply pt-10;
+}
+
+/* Map section */
+.map iframe {
+  @apply w-full h-[500px] rounded-[10px];
+}
+
+/* Location disc */
+.location__disc {
+  @apply text-pra mb-8 leading-[30px];
+}
+
+/* Page title decorative elements */
+.left__pei,
+.left__arrow,
+.right__arrow {
+  @apply absolute;
+}
+
+.left__pei {
+  @apply left-0 top-1/2 -translate-y-1/2;
+  @apply md:w-[40px];
+}
+
+.left__arrow {
+  @apply left-[5%] top-[20%];
+  @apply md:w-[30px];
+}
+
+.right__arrow {
+  @apply right-[5%] bottom-[20%];
+  @apply md:w-[30px];
+}
+
+/* Partner logo */
+.partner__logo {
+  @apply w-[180px] h-auto object-contain;
+}
+
 /* Testimonial section styles */
 .testimonial {
   @apply bg-body;
