@@ -91,22 +91,7 @@
     @apply hover:bg-btn hover:text-secondary;
   }
 
-  /* Circle button */
-  .circle {
-    @apply w-[182px] h-[182px] rounded-full border border-btn transition-all duration-500;
-    @apply flex items-center justify-center flex-col text-btn font-semibold;
-    @apply lg:w-[150px] lg:h-[150px];
-    @apply hover:bg-btn hover:text-secondary;
-  }
-
-  .circle i {
-    @apply -rotate-45 text-lg mb-1;
-  }
-
-  .circle__black {
-    @apply border-secondary text-secondary;
-    @apply hover:border-btn;
-  }
+  /* Circle button - see complete definition below */
 
   /* Video section */
   .video {
@@ -144,30 +129,7 @@
     @apply hover:bg-btn hover:border-btn;
   }
 
-  /* Partner section */
-  .partner {
-    @apply bg-[#293634] rounded-[10px] px-[90px] py-[90px] mt-[106px] overflow-x-hidden;
-    @apply xl:px-[70px] xl:py-[70px] xl:mt-[90px];
-    @apply md:px-[50px] md:py-[50px] md:mt-[70px];
-  }
-
-  .partner__wapper {
-    @apply max-w-[1120px] mx-auto overflow-hidden;
-  }
-
-  .partner__content {
-    @apply overflow-x-hidden flex justify-between w-[calc(220px*10)];
-    animation: scroll 40s linear infinite;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(calc(-220px * 5));
-    }
-  }
+  /* Partner section - see complete definition below */
 
   /* Header specific styles */
   .header__bottom_navbar {
@@ -1030,6 +992,256 @@
 
 .breadcrumb a {
   @apply hover:text-btn transition-colors duration-300;
+}
+
+/* Blog card styles */
+.blogs__wapper_card {
+  @apply bg-[#293634] rounded-[10px] overflow-hidden transition-all duration-500;
+  @apply hover:shadow-xl;
+}
+
+.card__thumb {
+  @apply w-full h-[250px] object-cover;
+}
+
+.card__title {
+  @apply text-primary mb-3 hover:text-btn transition-colors duration-300;
+}
+
+.card__author {
+  @apply flex items-center gap-4 text-pra text-sm;
+}
+
+/* Counter/About counter styles */
+.counter__box {
+  @apply text-center;
+}
+
+.counter__number {
+  @apply text-btn text-[54px] font-bold mb-2;
+  @apply xl:text-[45px];
+  @apply lg:text-[36px];
+}
+
+.counter__text {
+  @apply text-primary text-lg;
+}
+
+/* Navbar/Dropdown complete styles */
+.header__bottom_navbar {
+  @apply xl:flex items-center;
+}
+
+@media (max-width: 1279px) {
+  .header__bottom_navbar {
+    @apply absolute top-full left-[-100%] min-h-screen min-w-[300px] bg-btn transition-all duration-500;
+  }
+
+  .header__bottom_navbar-active {
+    @apply left-0;
+  }
+}
+
+/* Banner content wrapper */
+.banner__content {
+  @apply relative z-10;
+}
+
+/* Banner2 variant styles */
+.banner2__title {
+  @apply text-primary;
+}
+
+.banner2__number {
+  @apply text-primary;
+}
+
+.banner2__number h2 {
+  @apply text-btn;
+}
+
+/* About section variant 2 */
+.about__2 {
+  @apply bg-grayWhite;
+}
+
+.about__2_title {
+  @apply text-secondary;
+}
+
+.about__2_wapper {
+  @apply items-center;
+}
+
+.about__2_left {
+  @apply flex items-center justify-center;
+}
+
+.about__2_circle {
+  @apply text-secondary border-secondary;
+  @apply hover:bg-secondary hover:text-primary hover:border-secondary;
+}
+
+/* Services variant 2 */
+.services__2 {
+  @apply bg-grayWhite;
+}
+
+.services__2_title h1 {
+  @apply text-secondary;
+}
+
+.services__2_wapper {
+  @apply pt-5;
+}
+
+.services__2_row {
+  @apply -mt-5;
+}
+
+.services__2_card {
+  @apply bg-primary border border-[#e3ece7];
+  @apply hover:bg-secondary hover:border-secondary;
+}
+
+.services__2_card:hover h3,
+.services__2_card:hover p {
+  @apply text-primary;
+}
+
+/* All services page */
+.all__services {
+  @apply bg-grayWhite;
+}
+
+/* Projects variant 2 */
+.projects__2 {
+  @apply bg-grayWhite;
+}
+
+.projects__2_wapper {
+  @apply pt-10;
+}
+
+.projects__2_card {
+  @apply bg-primary rounded-[10px] overflow-hidden transition-all duration-500;
+  @apply hover:shadow-xl;
+}
+
+.projects__2_card img {
+  @apply w-full h-[280px] object-cover;
+}
+
+/* All projects page */
+.all__project {
+  @apply bg-grayWhite;
+}
+
+/* Testimonial variant 2 */
+.testimonial__2 {
+  @apply bg-grayWhite;
+}
+
+.testimonial__2 h1 {
+  @apply text-secondary;
+}
+
+.testimonial__slides_2 {
+  @apply mt-8;
+}
+
+.testimonial__wapper {
+  @apply pt-10;
+}
+
+/* Blog pages */
+.all__blog {
+  @apply bg-grayWhite;
+}
+
+.blog__details {
+  @apply bg-grayWhite;
+}
+
+/* Project details page */
+.project__details {
+  @apply bg-grayWhite;
+}
+
+.project__info {
+  @apply flex flex-wrap gap-4 mb-8;
+}
+
+.project__info li {
+  @apply flex items-center gap-2 text-pra;
+}
+
+.project__info li i {
+  @apply text-btn;
+}
+
+/* Service details page */
+.service__details {
+  @apply bg-grayWhite;
+}
+
+.thred__para {
+  @apply mb-8;
+}
+
+.fourt__para {
+  @apply mb-8;
+}
+
+/* Title variant black */
+.title__black {
+  @apply text-secondary;
+}
+
+/* Circle button complete */
+.circle {
+  @apply w-[182px] h-[182px] rounded-full border border-btn transition-all duration-500;
+  @apply flex items-center justify-center flex-col text-btn font-semibold;
+  @apply lg:w-[150px] lg:h-[150px];
+  @apply hover:bg-btn hover:text-secondary;
+}
+
+.circle i {
+  @apply -rotate-45 text-lg mb-1;
+}
+
+.circle span {
+  @apply text-center;
+}
+
+.circle__black {
+  @apply border-secondary text-secondary;
+  @apply hover:bg-secondary hover:text-primary hover:border-secondary;
+}
+
+/* Partner section complete */
+.partner {
+  @apply bg-[#293634] rounded-[10px] px-[90px] py-[90px] mt-[106px] overflow-x-hidden;
+  @apply xl:px-[70px] xl:py-[70px] xl:mt-[90px];
+  @apply md:px-[50px] md:py-[50px] md:mt-[70px];
+}
+
+.partner__wapper {
+  @apply max-w-[1120px] mx-auto overflow-hidden;
+}
+
+.partner__content {
+  @apply overflow-x-hidden flex justify-between w-[calc(220px*10)];
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-220px * 5));
+  }
 }
 
 /* Custom container sizes for specific sections */
