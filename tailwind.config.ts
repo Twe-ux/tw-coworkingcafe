@@ -24,9 +24,9 @@ const config: Config = {
         poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
-        "54": ["54px", { lineHeight: "65px" }],
-        "28": ["28px", { lineHeight: "38px" }],
-        "22": ["22px", { lineHeight: "38px" }],
+        "54": "54px",
+        "28": "28px",
+        "22": "22px",
       },
       spacing: {
         "130": "130px",
