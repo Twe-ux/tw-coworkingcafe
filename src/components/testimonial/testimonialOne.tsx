@@ -1,13 +1,14 @@
 "use client";
-import React from "react";
+
 import { testimonialsOneData } from "@/db/testimonialsOneData";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import SlideDown from "@/utils/animations/slideDown";
 import SlideUp from "@/utils/animations/slideUp";
+import React from "react";
+import "swiper/css";
+import "swiper/css/navigation";
+// import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import VideoTestimonial from "./videoTestimonial";
 
 const TestimonialOne: React.FC = () => {

@@ -9,7 +9,7 @@ const AboutOne: React.FC = () => {
   return (
     <section className="about py__130" id="about">
       <div className="container">
-        <div className="flex flex-wrap -mx-4 justify-between about__title">
+        <div className="flex-wrap -mx-4 justify-between about__title">
           <SlideDown>
             <div className="lg:w-10/12 px-4">
               <div>

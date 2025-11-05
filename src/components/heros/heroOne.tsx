@@ -7,13 +7,11 @@ const HeroOne: React.FC = () => {
     <section className="banner overflow-hidden bg-[#0f1b19] pt-[107px] pb-[108px]">
       <div className="container relative">
         <div className="flex flex-wrap -mx-4">
-          <div className="lg:w-8/12 px-4">
+          <div className="lg:w-8/12">
             <div className="banner__content relative z-10">
               <div className="banner__content_title">
                 <SlideUp>
-                  <h1 className="text-primary text-[100px] xl:text-[80px] lg:text-[60px] sm:text-[50px] leading-[100px] xl:leading-[80px] lg:leading-[60px] sm:leading-[53px] font-semibold">
-                    We Are A Creative Digital Agency
-                  </h1>
+                  <h1>We Are A Creative Digital Agency</h1>
                 </SlideUp>
                 <SlideUp delay={2}>
                   <p className="max-w-[700px] text-[22px] md:text-lg leading-[32px] md:leading-7 text-pra mt-[73px] xl:mt-[50px] lg:mt-10">
@@ -66,7 +64,7 @@ const HeroOne: React.FC = () => {
               </SlideUp>
             </div>
           </div>
-          <div className="lg:w-4/12 px-4">
+          <div className="lg:w-4/12">
             <div className="banner__right">
               <img
                 src="/images/banner/Shape.svg"
@@ -82,7 +80,7 @@ const HeroOne: React.FC = () => {
                 <img
                   src="/images/banner/Rectangle96.png"
                   alt="img"
-                  className="bg__img"
+                  className="bg__img max-w-[150%]"
                 />
               </div>
             </div>
