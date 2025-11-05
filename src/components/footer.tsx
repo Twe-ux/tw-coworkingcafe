@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             <div className="flex justify-center">
               <Link
                 href={"#"}
-                className="flex items-center footer__logo mb-[50px]"
+                className="footer__logo flex items-center"
               >
                 <img src="/images/logo_white.svg" alt="img" />
                 <h5 className="text-[34px] font-semibold mb-0 text-primary">
@@ -81,13 +81,13 @@ const Footer: React.FC = () => {
         </div>
         {/* Logo and social icon */}
 
-        <hr className="footer__border bg-grayWhite w-full h-[1px] text-grayWhite m-0 border-0" />
+        <hr className="footer__border" />
 
         {/* Info */}
         <div className="footer__info flex flex-wrap -mx-4 pt-10">
           <div className="lg:w-4/12 md:w-6/12 px-4 mb-5 lg:mb-0">
-            <div className="footer__info_address max-w-[312px]">
-              <h3 className="footer__info_group text-[28px] text-grayWhite font-medium leading-[38px] mb-[29px]">
+            <div className="footer__info_address">
+              <h3 className="footer__info_group">
                 Address
               </h3>
               <p>2096 New Market, New Road North West Bengal, NY, USA</p>
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="lg:w-3/12 md:w-6/12 px-4 mb-5 lg:mb-0">
             <div>
-              <h3 className="footer__info_group text-[28px] text-grayWhite font-medium leading-[38px] mb-[29px]">
+              <h3 className="footer__info_group">
                 Our Contact
               </h3>
               <ul className="footer__info_contact">
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="lg:w-3/12 md:w-6/12 px-4 mb-5 lg:mb-0">
             <div>
-              <h3 className="footer__info_group text-[28px] text-grayWhite font-medium leading-[38px] mb-[29px]">
+              <h3 className="footer__info_group">
                 Quick Links
               </h3>
               <ul>
@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="lg:w-2/12 md:w-6/12 px-4 mb-5 lg:mb-0">
             <div>
-              <h3 className="footer__info_group text-[28px] text-grayWhite font-medium leading-[38px] mb-[29px]">
+              <h3 className="footer__info_group">
                 Help
               </h3>
               <ul>
@@ -165,9 +165,9 @@ const Footer: React.FC = () => {
         </div>
         {/* Info */}
 
-        <div className="footer__copyright flex flex-wrap -mx-4 mt-[133px]">
+        <div className="footer__copyright flex flex-wrap -mx-4">
           <div className="w-full px-4">
-            <hr className="footer__border bg-grayWhite w-full h-[1px] text-grayWhite m-0 border-0" />
+            <hr className="footer__border" />
             <p className="text-center py-[25px]">
               © Copyright 2025 All Rights Reserved by{" "}
               <Link href={"#"} className="text-btn font-semibold">
