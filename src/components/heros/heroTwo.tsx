@@ -31,7 +31,7 @@ const HeroTwo: React.FC = () => {
                   <img src="/icons/arrow-up-rignt-black.svg" alt="img" />
                 </Link>
               </SlideUp>
-              <SlideUp className="banner__content_number banner2__number flex justify-between max-w-[745px] xl:max-w-full bg-secondary rounded-[10px] px-[45px] py-[45px] xl:px-10 xl:py-10 lg:px-5 lg:py-5 md:px-[15px] md:py-[15px] mt-[107px] xl:mt-[90px] lg:mt-[70px] md:mt-[50px]">
+              <SlideUp className="banner__content_number banner2__number flex justify-between">
                 <div>
                   <h4 className="text-primary text-[44px] xl:text-[35px] lg:text-[30px] md:text-[25px] sm:text-[22px] font-bold mb-0">
                     45+

@@ -43,7 +43,7 @@ const HeroOne: React.FC = () => {
               </SlideUp>
               <SlideUp
                 delay={4}
-                className="banner__content_number flex justify-between max-w-[745px] xl:max-w-full bg-[#e7fece] rounded-[10px] px-[45px] py-[45px] xl:px-10 xl:py-10 lg:px-5 lg:py-5 md:px-[15px] md:py-[15px] mt-[107px] xl:mt-[90px] lg:mt-[70px] md:mt-[50px]"
+                className="banner__content_number flex justify-between"
               >
                 <div>
                   <h4 className="text-grayBlack text-[44px] xl:text-[35px] lg:text-[30px] md:text-[25px] sm:text-[22px] font-bold mb-0">
