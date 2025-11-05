@@ -33,7 +33,7 @@
 
   body {
     font-family: "Poppins", sans-serif;
-    background-color: var(--body-clr);
+    background-color: var(--grayWhite-clr);
     scroll-behavior: smooth;
     margin: 0;
     font-size: 1rem;
@@ -3698,6 +3698,10 @@
   .banner2 .container,
   .header .container,
   .page__header .container {
+    max-width: 1420px;
+  }
+
+  .header__1 .container {
     max-width: 1320px;
   }
 }
