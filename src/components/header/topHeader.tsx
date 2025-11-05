@@ -3,7 +3,7 @@ import React from "react";
 
 const TopHeader: React.FC = () => {
   return (
-    <div className="header__top hidden lg:block bg-main text-primary py-[18px]">
+    <div className="header__top hidden lg:block">
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-[13px]">

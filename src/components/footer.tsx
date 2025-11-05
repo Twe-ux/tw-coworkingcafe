@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="footer bg-secondary">
       <div className="container">
         {/* Subscribe Form */}
-        <div className="subscribe bg-[#588983] px-20 py-24 xl:px-[70px] xl:py-20 lg:px-10 lg:py-[60px] rounded-[10px] -translate-y-1/2">
+        <div className="subscribe">
           <div className="flex flex-wrap -mx-4">
             <div className="lg:w-8/12 px-4">
               <h2 className="text-grayWhite text-[54px] xl:text-[45px] lg:text-[40px] sm:text-[32px] font-medium leading-[62px] xl:leading-[50px] lg:leading-[45px] sm:leading-[35px] max-w-[690px]">
@@ -18,9 +18,8 @@ const Footer: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Your Email"
-                  className="w-full px-[23px] py-[23px] lg:px-5 lg:py-5 sm:px-[17px] sm:py-[17px] rounded-[10px] text-pra bg-main border border-main outline-none placeholder:text-pra"
                 />
-                <button className="common__btn w-full bg-btn text-secondary mt-5 px-[23px] py-[23px] lg:px-5 lg:py-5 sm:px-[17px] sm:py-[17px] justify-center">
+                <button className="common__btn">
                   <span>Subscribe Now</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </button>
@@ -31,7 +30,7 @@ const Footer: React.FC = () => {
         {/* Subscribe Form */}
 
         {/* Logo and social icon */}
-        <div className="footer__lo_co flex flex-wrap -mx-4 -mt-[49px] lg:-mt-[60px] md:-mt-[100px]">
+        <div className="footer__lo_co flex flex-wrap -mx-4">
           <div className="w-full px-4">
             <div className="flex justify-center">
               <Link

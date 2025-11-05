@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   return (
     <header className="header header__1">
       <TopHeader />
-      <div className="header__bottom bg-btn py-6 relative z-[1000]">
+      <div className="header__bottom">
         <div className="container">
           <div className="flex items-center justify-between">
             <div>
