@@ -44,9 +44,6 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  .home1 {
-    background-color: var(--body-clr);
-  }
 
   h1,
   h2,
@@ -4224,4 +4221,24 @@
   .header__1 .container {
     max-width: 1320px;
   }
+}
+
+/* ========================================
+   PAGE-SPECIFIC BODY BACKGROUNDS
+   IMPORTANT: Must be outside @layer for maximum specificity
+   ======================================== */
+
+/* Home page 1 - Dark background */
+body.home1 {
+  background-color: var(--body-clr) !important;
+}
+
+/* Home page 2 - Main color background */
+body.home2 {
+  background-color: var(--main-clr) !important;
+}
+
+/* About page and other pages - Light background (default) */
+body.about__page {
+  background-color: var(--grayWhite-clr) !important;
 }
