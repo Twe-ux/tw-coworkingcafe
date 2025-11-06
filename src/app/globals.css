@@ -1620,8 +1620,14 @@
 }
 
 .banner__content .buttons {
-  gap: 24px;
+  gap: 0;
   margin-top: 59px;
+}
+
+@media (min-width: 1024px) {
+  .banner__content .buttons {
+    gap: 24px;
+  }
 }
 
 @media (max-width: 1200px) {

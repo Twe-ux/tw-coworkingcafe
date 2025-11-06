@@ -22,7 +22,7 @@ const HeroOne: React.FC = () => {
               </div>
               <SlideUp
                 delay={3}
-                className="buttons flex flex-row gap-0 xl:gap-6 lg:gap-6 items-center  mt-[59px] xl:mt-[50px] lg:mt-10"
+                className="buttons flex flex-row items-center"
               >
                 <Link
                   href={"/services"}
