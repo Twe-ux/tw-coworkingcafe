@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "@/assets/font/bootstrap-font/bootstrap-icons.min.css";
 import "@/assets/font/font-awsome/css-js/all.min.css";
 import "./globals.css";
