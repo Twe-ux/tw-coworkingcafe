@@ -27,6 +27,7 @@ const FaqSection: React.FC = () => {
                     aria-controls={`collapse${item.id}`}
                   >
                     <span>{item.question}</span>
+                    <i className="accordion-icon"></i>
                   </button>
                 </h2>
                 <div
