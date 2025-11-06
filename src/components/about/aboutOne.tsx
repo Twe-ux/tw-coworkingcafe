@@ -33,7 +33,7 @@ const AboutOne: React.FC = () => {
         <div className="flex flex-wrap -mx-4 justify-between items-center about__wapper">
           <div className="xl:w-5/12 lg:w-6/12 px-4">
             <SlideUp>
-              <div className="about__wapper_left">
+              <div className="about__wapper_left ">
                 <p>
                   High-quality, relevant content is essential for engaging and
                   retaining online audiences. Digital marketing agencies often

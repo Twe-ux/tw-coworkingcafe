@@ -20,20 +20,17 @@ const HeroOne: React.FC = () => {
                   </p>
                 </SlideUp>
               </div>
-              <SlideUp
-                delay={3}
-                className="buttons flex flex-row items-center"
-              >
+              <SlideUp delay={3} className="buttons flex flex-row items-center">
                 <Link
                   href={"/services"}
-                  className="common__btn buttons_file bg-main border-main"
+                  className="common__btn buttons_file bg-main mt-4 sm:mt-0 border-main"
                 >
                   <span>View Our Service</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </Link>
                 <Link
                   href={"/about"}
-                  className="common__btn buttons_outline text-btn sm:mt-0"
+                  className="common__btn buttons_outline mt-4 text-btn sm:mt-0"
                 >
                   <span>More About Us</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -80,7 +77,7 @@ const HeroOne: React.FC = () => {
                 <img
                   src="/images/banner/Rectangle96.png"
                   alt="img"
-                  className="bg__img max-w-[150%]"
+                  className="bg__img "
                 />
               </div>
             </div>

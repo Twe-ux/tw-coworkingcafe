@@ -15,10 +15,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="lg:w-4/12 px-4 mt-5 lg:mt-0">
               <div>
-                <input
-                  type="text"
-                  placeholder="Your Email"
-                />
+                <input type="text" placeholder="Your Email" />
                 <button className="common__btn">
                   <span>Subscribe Now</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -33,10 +30,7 @@ const Footer: React.FC = () => {
         <div className="footer__lo_co flex flex-wrap -mx-4">
           <div className="w-full px-4">
             <div className="flex justify-center">
-              <Link
-                href={"#"}
-                className="footer__logo flex items-center"
-              >
+              <Link href={"#"} className="footer__logo flex items-center">
                 <img src="/images/logo_white.svg" alt="img" />
                 <h5 className="text-[34px] font-semibold mb-0 text-primary">
                   Digiv
@@ -84,20 +78,16 @@ const Footer: React.FC = () => {
         <hr className="footer__border" />
 
         {/* Info */}
-        <div className="footer__info flex flex-wrap -mx-4 pt-10">
+        <div className="footer__info row">
           <div className="lg:w-4/12 md:w-6/12 px-4 mb-5 lg:mb-0">
             <div className="footer__info_address">
-              <h3 className="footer__info_group">
-                Address
-              </h3>
+              <h3 className="footer__info_group">Address</h3>
               <p>2096 New Market, New Road North West Bengal, NY, USA</p>
             </div>
           </div>
           <div className="lg:w-3/12 md:w-6/12 px-4 mb-5 lg:mb-0">
             <div>
-              <h3 className="footer__info_group">
-                Our Contact
-              </h3>
+              <h3 className="footer__info_group">Our Contact</h3>
               <ul className="footer__info_contact">
                 <li className="flex items-center gap-[7px] mb-[25px]">
                   <img src="/icons/Frame5.svg" alt="img" />
@@ -116,9 +106,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="lg:w-3/12 md:w-6/12 px-4 mb-5 lg:mb-0">
             <div>
-              <h3 className="footer__info_group">
-                Quick Links
-              </h3>
+              <h3 className="footer__info_group">Quick Links</h3>
               <ul>
                 <li className="mb-[22px]">
                   <Link href={"#"} className="text-pra inline-block">
@@ -140,9 +128,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="lg:w-2/12 md:w-6/12 px-4 mb-5 lg:mb-0">
             <div>
-              <h3 className="footer__info_group">
-                Help
-              </h3>
+              <h3 className="footer__info_group">Help</h3>
               <ul>
                 <li className="mb-[22px]">
                   <Link href={"#"} className="text-pra inline-block">

@@ -78,7 +78,7 @@ const TestimonialOne: React.FC = () => {
               <div className="prev-slide slide__nav">
                 <i className="fa-solid fa-arrow-left"></i>
               </div>
-              <div className="testimonial-pagination flex gap-3"></div>
+              <div className="testimonial-pagination flex gap-3 flex-swipe"></div>
               <div className="next-slide slide__nav">
                 <i className="fa-solid fa-arrow-right"></i>
               </div>

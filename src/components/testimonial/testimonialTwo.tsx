@@ -1,13 +1,13 @@
 "use client";
-import React from "react";
 import { testimonialsTwoData } from "@/db/testimonialsTwoData";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import SlideDown from "@/utils/animations/slideDown";
+import SlideUp from "@/utils/animations/slideUp";
+import React from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import SlideUp from "@/utils/animations/slideUp";
-import SlideDown from "@/utils/animations/slideDown";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const TestimonialTwo: React.FC = () => {
   return (
@@ -85,11 +85,11 @@ const TestimonialTwo: React.FC = () => {
                     </SwiperSlide>
                   ))}
                   <div className="flex gap-3 mt-4">
-                    <div className="prev-slide slide__nav">
+                    <div className="prev-slide slide__nav slide__nav-2 ">
                       <i className="fa-solid fa-arrow-left"></i>
                     </div>
-                    <div className="testimonial-pagination flex gap-3"></div>
-                    <div className="next-slide slide__nav">
+                    <div className="testimonial-pagination flex gap-3 flex-swipe"></div>
+                    <div className="next-slide slide__nav slide__nav-2">
                       <i className="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>

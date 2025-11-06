@@ -5,7 +5,7 @@ import React from "react";
 
 const PricingTable: React.FC = () => {
   return (
-    <div className="flex flex-wrap -mx-4 pt__50">
+    <div className="flex flex-wrap -mx-4 pt__50 row">
       {pricingData.map((plan, index) => (
         <SlideUp
           key={index}

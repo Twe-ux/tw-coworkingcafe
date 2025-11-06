@@ -46,6 +46,85 @@
     margin-top: var(--bs-gutter-y);
   }
 
+  .banner__right .bg__img {
+    max-width: 150%;
+    height: auto;
+  }
+
+  .flex-swipe {
+    bottom: var(--swiper-pagination-bottom, 8px);
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: auto !important;
+  }
+
+  .testimonial .slide__nav-2 {
+    border: 1px solid var(--grayBlack-clr) !important;
+    color: var(--grayBlack-clr) !important;
+  }
+
+  .service__details {
+    max-width: 1096px;
+    margin: auto;
+    margin-bottom: 181px;
+  }
+
+  .service__details .first__para h2,
+  .service__details .first__para .h2 {
+    margin-bottom: 33px;
+  }
+
+  .service__details .first__para p,
+  .service__details .thred__para p {
+    color: #6e6f75;
+  }
+
+  .service__details .first__para p:last-child {
+    margin-top: 45px;
+  }
+
+  .service__details .second__para ul {
+    margin-top: 35px;
+    margin-left: 14px;
+  }
+
+  .service__details .second__para ul li,
+  .service__details .thred__para ul li {
+    color: var(--secondary-clr) #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .service__details .thred__para h5,
+  .service__details .thred__para .h5 {
+    margin-bottom: 25px;
+  }
+
+  .service__details .second__para ul li::after,
+  .service__details .thred__para ul li::after {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgba(22, 16, 1, 0.4196078431);
+  }
+
+  .service__details .thred__para ul {
+    padding: 35px 0;
+    margin-left: 14px;
+  }
+  .service__details .fourt__para {
+    margin-top: 45px;
+  }
+  .service__details .fourt__para p {
+    margin-top: 25px;
+    color: #6e6f75;
+  }
+
   /* End Custom Twe */
 
   body {
