@@ -6,7 +6,6 @@ import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer";
 import PathNameLoad from "@/utils/pathNameLoad";
-import BootstrapClient from "@/utils/bootstrapClient";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -22,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <BootstrapClient />
         <PathNameLoad />
         <Header />
         {children}

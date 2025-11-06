@@ -1,8 +1,16 @@
+"use client";
+
 import { faqData } from "@/db/faqData";
 import SlideUp from "@/utils/animations/slideUp";
-import React from "react";
+import React, { useState } from "react";
 
 const FaqSection: React.FC = () => {
+  const [openId, setOpenId] = useState<string | null>(null);
+
+  const toggleAccordion = (id: string) => {
+    setOpenId(openId === id ? null : id);
+  };
+
   return (
     <section className="faq py__130">
       <div className="container">
@@ -19,11 +27,12 @@ const FaqSection: React.FC = () => {
               >
                 <h2 className="accordion-header" id={item.id}>
                   <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${
+                      openId === item.id ? "" : "collapsed"
+                    }`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target={`#collapse${item.id}`}
-                    aria-expanded="false"
+                    onClick={() => toggleAccordion(item.id)}
+                    aria-expanded={openId === item.id}
                     aria-controls={`collapse${item.id}`}
                   >
                     {item.question}
@@ -31,9 +40,10 @@ const FaqSection: React.FC = () => {
                 </h2>
                 <div
                   id={`collapse${item.id}`}
-                  className="accordion-collapse collapse"
+                  className={`accordion-collapse collapse ${
+                    openId === item.id ? "show" : ""
+                  }`}
                   aria-labelledby={item.id}
-                  data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
                     <p>{item.answer}</p>
