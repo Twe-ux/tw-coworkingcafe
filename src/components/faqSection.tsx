@@ -11,13 +11,13 @@ const FaqSection: React.FC = () => {
         </h2>
         <div className="faq__wapper">
           <div className="accordion" id="accordionExample">
-            {faqData.map((item, index) => (
+            {faqData.map((item) => (
               <SlideUp
                 key={item.id}
                 className="accordion-item"
-                delay={index}
+                delay={item.delay}
               >
-                <h2 className="accordion-header" id={item.id.toString()}>
+                <h2 className="accordion-header" id={item.id}>
                   <button
                     className="accordion-button collapsed"
                     type="button"
@@ -26,14 +26,13 @@ const FaqSection: React.FC = () => {
                     aria-expanded="false"
                     aria-controls={`collapse${item.id}`}
                   >
-                    <span>{item.question}</span>
-                    <i className="accordion-icon"></i>
+                    {item.question}
                   </button>
                 </h2>
                 <div
                   id={`collapse${item.id}`}
                   className="accordion-collapse collapse"
-                  aria-labelledby={item.id.toString()}
+                  aria-labelledby={item.id}
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">

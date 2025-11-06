@@ -3702,56 +3702,11 @@
   padding: 0;
   padding-top: 40px;
   padding-bottom: 39px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button:hover {
-  opacity: 0.8;
 }
 
 .faq .faq__wapper .accordion-item .accordion-header .accordion-button::after {
-  display: none;
-}
-
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button .accordion-icon {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  margin-left: 20px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button .accordion-icon::before,
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button .accordion-icon::after {
-  content: '';
-  position: absolute;
-  background-color: var(--secondary-clr);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button .accordion-icon::before {
-  width: 24px;
-  height: 2px;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button .accordion-icon::after {
-  width: 2px;
-  height: 24px;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-}
-
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button:not(.collapsed) .accordion-icon::after {
-  transform: translateX(-50%) rotate(90deg);
-  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (max-width: 768px) {
@@ -3763,7 +3718,7 @@
 }
 
 .faq .faq__wapper .accordion-collapse {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faq .faq__wapper .accordion-body {
