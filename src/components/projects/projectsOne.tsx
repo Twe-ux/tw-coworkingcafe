@@ -1,0 +1,48 @@
+import React from "react";
+import { projectsOneData } from "@/db/projectsOneData";
+import ProjectsUseCase from "../projectsUseCase";
+import SlideDown from "@/utils/animations/slideDown";
+import SlideUp from "@/utils/animations/slideUp";
+import Link from "next/link";
+
+interface ProjectsOneProps {
+  isProjectUseCaseShow?: boolean;
+}
+
+const ProjectsOne: React.FC<ProjectsOneProps> = ({ isProjectUseCaseShow }) => {
+  return (
+    <section className="projects py__130">
+      <div className="container">
+        {/* title Start */}
+        <SlideDown className="lg:flex justify-between items-center projects__title">
+          <h1 className="title">Our latest work for our best customer</h1>
+          <Link href="/projects" className="circle mt-5 lg:mt-0">
+            <i className="fa-solid fa-arrow-right"></i>
+            <span>View All Project</span>
+          </Link>
+        </SlideDown>
+        {/* title End */}
+        <div className="projects__wapper">
+          {projectsOneData.map(({ categories, id, imgSrc, title }) => {
+            return (
+              <SlideUp delay={id} key={id} className="projects__wapper_card">
+                <Link href="/project-details">
+                  <img src={imgSrc} alt="img" />
+                </Link>
+                <div>
+                  <Link href="/project-details" className="prj__title t__28">
+                    {title}
+                  </Link>
+                  <p className="project__group">{categories}</p>
+                </div>
+              </SlideUp>
+            );
+          })}
+        </div>
+        {isProjectUseCaseShow && <ProjectsUseCase />}
+      </div>
+    </section>
+  );
+};
+
+export default ProjectsOne;
