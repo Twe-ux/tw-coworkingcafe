@@ -125,6 +125,90 @@
     color: #6e6f75;
   }
 
+  .faq .faq__wapper .faq-trigger {
+    font-family: "Kanit" !important;
+  }
+
+  .pricing__card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .partner.bg-transparent {
+    background-color: transparent;
+  }
+
+  .project__details {
+    max-width: 1096px;
+    margin: auto;
+    margin-bottom: 181px;
+  }
+
+  .project__details .project__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-bottom: 55px;
+  }
+
+  .project__details .project__info p {
+    font-weight: 600;
+    color: var(--secondary-clr);
+    margin-bottom: 8px;
+  }
+
+  .project__details .first__para img {
+    max-height: 562px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  .project__details .first__para p {
+    color: #6e6f75;
+    margin-top: 25px;
+  }
+
+  .project__details .second__para ul {
+    margin-top: 35px;
+    margin-left: 14px;
+  }
+
+  .project__details .second__para ul li {
+    color: var(--secondary-clr);
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .project__details .second__para ul li::after {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgba(22, 16, 1, 0.4196078431);
+  }
+
+  .sidebar .latest__post ul li a {
+    font-family: "Kanit" !important;
+    width: 175px !important;
+  }
+
+  .blog__details .leave__replay .common__btn {
+    background-color: var(--btn-clr) !important;
+    color: var(--secondary-clr) !important;
+    border: transparent !important;
+  }
+
   /* End Custom Twe */
 
   body {

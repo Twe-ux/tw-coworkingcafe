@@ -17,8 +17,8 @@ const PricingTable: React.FC = () => {
               <h6>{plan.title}</h6>
               <h1 className="t__54">{plan.price}</h1>
               <p>Per year</p>
+              <span className="border__full" />
             </div>
-            <span className="border__full" />
             <ul>
               {plan.features.map((feature, i) => (
                 <li key={i}>

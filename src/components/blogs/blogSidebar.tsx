@@ -60,7 +60,7 @@ const BlogSidebar: React.FC = () => {
                 </a>
                 <div>
                   <Link href="/blog-details">{title}</Link>
-                  <p>
+                  <p className="flex">
                     <img src="/icons/clender.svg" alt="img" />
                     <span>18, January 2025</span>
                   </p>

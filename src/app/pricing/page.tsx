@@ -2,6 +2,7 @@ import PageTitle from "@/components/pageTitle";
 import Partner from "@/components/partner";
 import PricingTable from "@/components/pricing/pricingTable";
 import { partnerTwoLogos } from "@/db/partnerOneLogos";
+
 import React from "react";
 
 const Pricing: React.FC = () => {

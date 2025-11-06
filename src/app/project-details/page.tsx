@@ -66,7 +66,7 @@ const ProjectDetails: React.FC = () => {
             </p>
           </div>
           <div className="second__para pt__50">
-            <div className="flex flex-wrap -mx-4 justify-between items-center">
+            <div className="flex flex-wrap row justify-between items-center">
               <SlideUp className="md:w-5/12 px-4">
                 <div>
                   <h4 className="t__28">

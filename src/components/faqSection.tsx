@@ -1,14 +1,14 @@
 "use client";
 
-import { faqData } from "@/db/faqData";
-import SlideUp from "@/utils/animations/slideUp";
-import React from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { faqData } from "@/db/faqData";
+import SlideUp from "@/utils/animations/slideUp";
+import React from "react";
 
 const FaqSection: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const FaqSection: React.FC = () => {
         <div className="faq__wapper">
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((item) => (
-              <SlideUp key={item.id} delay={item.delay}>
+              <SlideUp key={item.id}>
                 <AccordionItem value={item.id} className="faq-item">
                   <AccordionTrigger className="faq-trigger">
                     {item.question}
