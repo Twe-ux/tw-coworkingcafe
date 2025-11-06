@@ -3682,17 +3682,17 @@
   margin-top: 70px;
 }
 
-.faq .faq__wapper .accordion-item {
+/* Shadcn Accordion Custom Styles */
+.faq .faq__wapper .faq-item {
   background-color: transparent;
   border-bottom: 1px solid var(--secondary-clr);
   border-radius: 0;
+  border-top: none;
 }
 
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button {
+.faq .faq__wapper .faq-trigger {
   box-shadow: none;
   background-color: transparent;
-  font-size: 20px;
-  font-weight: 400;
   color: var(--secondary-clr);
   border: unset;
   font-size: 28px;
@@ -3703,39 +3703,42 @@
   padding-top: 40px;
   padding-bottom: 39px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none !important;
+  width: 100%;
+  text-align: left;
 }
 
-.faq .faq__wapper .accordion-item .accordion-header .accordion-button::after {
+.faq .faq__wapper .faq-trigger:hover {
+  text-decoration: none;
+}
+
+.faq .faq__wapper .faq-trigger:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.faq .faq__wapper .faq-trigger svg {
+  color: var(--secondary-clr);
+  width: 24px;
+  height: 24px;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (max-width: 768px) {
-  .faq .faq__wapper .accordion-item .accordion-header .accordion-button {
+  .faq .faq__wapper .faq-trigger {
     padding-top: 30px;
     padding-bottom: 28px;
     font-size: 22px;
   }
 }
 
-.faq .faq__wapper .accordion-collapse {
-  overflow: hidden;
-  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  max-height: 0;
-  opacity: 0;
-}
-
-.faq .faq__wapper .accordion-collapse.show {
-  max-height: 500px;
-  opacity: 1;
-}
-
-.faq .faq__wapper .accordion-body {
+.faq .faq__wapper .faq-content {
   border-top: unset;
   padding: 0;
   padding-bottom: 20px;
 }
 
-.faq .faq__wapper .accordion-body p {
+.faq .faq__wapper .faq-content p {
   color: #6e6f75;
   font-weight: 400;
   line-height: 30px;

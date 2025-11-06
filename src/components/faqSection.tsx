@@ -2,15 +2,15 @@
 
 import { faqData } from "@/db/faqData";
 import SlideUp from "@/utils/animations/slideUp";
-import React, { useState } from "react";
+import React from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const FaqSection: React.FC = () => {
-  const [openId, setOpenId] = useState<string | null>(null);
-
-  const toggleAccordion = (id: string) => {
-    setOpenId(openId === id ? null : id);
-  };
-
   return (
     <section className="faq py__130">
       <div className="container">
@@ -18,40 +18,20 @@ const FaqSection: React.FC = () => {
           We will be there for you every time of the way 24/7! for customer
         </h2>
         <div className="faq__wapper">
-          <div className="accordion" id="accordionExample">
+          <Accordion type="single" collapsible className="w-full">
             {faqData.map((item) => (
-              <SlideUp
-                key={item.id}
-                className="accordion-item"
-                delay={item.delay}
-              >
-                <h2 className="accordion-header" id={item.id}>
-                  <button
-                    className={`accordion-button ${
-                      openId === item.id ? "" : "collapsed"
-                    }`}
-                    type="button"
-                    onClick={() => toggleAccordion(item.id)}
-                    aria-expanded={openId === item.id}
-                    aria-controls={`collapse${item.id}`}
-                  >
+              <SlideUp key={item.id} delay={item.delay}>
+                <AccordionItem value={item.id} className="faq-item">
+                  <AccordionTrigger className="faq-trigger">
                     {item.question}
-                  </button>
-                </h2>
-                <div
-                  id={`collapse${item.id}`}
-                  className={`accordion-collapse collapse ${
-                    openId === item.id ? "show" : ""
-                  }`}
-                  aria-labelledby={item.id}
-                >
-                  <div className="accordion-body">
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-content">
                     <p>{item.answer}</p>
-                  </div>
-                </div>
+                  </AccordionContent>
+                </AccordionItem>
               </SlideUp>
             ))}
-          </div>
+          </Accordion>
         </div>
       </div>
     </section>
