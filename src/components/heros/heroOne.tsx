@@ -6,7 +6,7 @@ const HeroOne: React.FC = () => {
   return (
     <section className="banner overflow-hidden bg-[#0f1b19] pt-[107px] pb-[108px]">
       <div className="container relative">
-        <div className="flex flex-wrap -mx-4">
+        <div className="flex flex-wrap row">
           <div className="lg:w-8/12">
             <div className="banner__content relative z-10">
               <div className="banner__content_title">
@@ -22,7 +22,7 @@ const HeroOne: React.FC = () => {
               </div>
               <SlideUp
                 delay={3}
-                className="buttons flex sm:flex-row flex-col sm:items-center gap-6 mt-[59px] xl:mt-[50px] lg:mt-10"
+                className="buttons flex flex-row gap-0 xl:gap-6 lg:gap-6 items-center  mt-[59px] xl:mt-[50px] lg:mt-10"
               >
                 <Link
                   href={"/services"}
@@ -33,7 +33,7 @@ const HeroOne: React.FC = () => {
                 </Link>
                 <Link
                   href={"/about"}
-                  className="common__btn buttons_outline text-btn mt-4 sm:mt-0"
+                  className="common__btn buttons_outline text-btn sm:mt-0"
                 >
                   <span>More About Us</span>
                   <i className="fa-solid fa-arrow-right"></i>

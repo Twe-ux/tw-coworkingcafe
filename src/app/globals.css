@@ -31,6 +31,23 @@
     box-sizing: border-box;
   }
 
+  /* Custon Twe */
+
+  a.card__title.t__28 {
+    font-family: "Kanit";
+  }
+
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+  }
+
+  /* End Custom Twe */
+
   body {
     font-family: "Poppins", sans-serif;
     background-color: var(--grayWhite-clr);
@@ -43,7 +60,6 @@
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-
 
   h1,
   h2,
@@ -3799,8 +3815,8 @@
   }
 }
 
-.page__header .right__arrow {
-}
+/* .page__header .right__arrow {
+} */
 
 @media (max-width: 1200px) {
   .page__header .right__arrow {
@@ -3810,8 +3826,8 @@
   }
 }
 
-.page__header .left__pei {
-}
+/* .page__header .left__pei {
+} */
 
 @media (max-width: 1200px) {
   .page__header .left__pei {
